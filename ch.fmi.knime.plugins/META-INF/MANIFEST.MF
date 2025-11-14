@@ -23,7 +23,7 @@ Require-Bundle: org.knime.base;bundle-version="[3.0.0,6.0.0)",
  imglib2-algorithm-gpl;bundle-version="0.1.5",
  imglib2-ij;bundle-version="2.0.35",
  imagej-deprecated;bundle-version="0.1.1"
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-21
 Bundle-ClassPath: lib/AnalyzeSkeleton_-3.4.1.jar,
  lib/Descriptor_based_registration-2.1.7.jar,
  lib/Fiji_Plugins-3.1.1.jar,

@@ -12,11 +12,14 @@
 	<properties>
 		<revision>1.0.0</revision>
 		<changelist>-SNAPSHOT</changelist>
-		<knime.version>5.2</knime.version>
-		<tycho.version>3.0.3</tycho.version>
+		<knime.version>nightly</knime.version>
+		<tycho.version>4.0.13</tycho.version>
 		<tycho.extras.version>${tycho.version}</tycho.extras.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.compiler.source>21</maven.compiler.source>
+		<maven.compiler.target>21</maven.compiler.target>
+		<maven.compiler.release>21</maven.compiler.release>		
 	</properties>
 
 	<!-- List the modules of your project here -->
@@ -132,7 +135,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
-				<version>1.6.0</version>
+				<version>3.2.0</version>
 				<executions>
 					<execution>
 						<id>run-eclipse-helper</id>
@@ -183,6 +186,7 @@
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>target-platform-configuration</artifactId>
 				<configuration>
+					<executionEnvironment>JavaSE-21</executionEnvironment>
 					<environments>
 						<!-- These can be removed once we shut down the Buckminster build -->
 						<environment>
